@@ -1,5 +1,5 @@
 {
-    "name": "fuzion/omnipay-paybox",
+    "name": "streetcolor/omnipay-paybox",
     "type": "library",
     "description": "Paybox support for Omnipay payment processing library",
     "keywords": [
@@ -11,7 +11,7 @@
         "payment",
         "purchase"
     ],
-    "homepage": "https://github.com/eileenmcnaughton/omnipay-paybox",
+    "homepage": "https://github.com/streetcolor/omnipay-paybox",
     "license": "MIT",
     "authors": [
         {
@@ -20,12 +20,20 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Omnipay\\Paybox\\" : "src/" }
+        "psr-4": { "Omnipay\\PayPal\\" : "src/" }
     },
     "require": {
-        "omnipay/common": "~2.0"
+        "omnipay/common": "^3"
     },
     "require-dev": {
-        "omnipay/tests": "~2.0"
-    }
+        "omnipay/tests": "^3",
+        "squizlabs/php_codesniffer": "^3",
+        "phpro/grumphp": "^0.14"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    },
+    "prefer-stable": false
 }
